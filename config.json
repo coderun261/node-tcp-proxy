@@ -1,0 +1,26 @@
+{
+  "ports": [8000],
+  "logger": {
+    "mode": "console",
+    "params": {
+      "color": true,
+      "truncate": {
+        "mode": "lsb",
+        "length": 8
+      }
+    }
+  },
+  "rewriter": "./lib/rewrite/forward.js",
+  "params": {
+    "log": ["events"],
+    "remote": {
+      "host": "xelisv2-pepew.na.mine.zpool.ca",
+      "port": 4833,
+      "retry": 10
+    },
+    "stats": {
+      "enabled": true,
+      "captureShares": true
+    }
+  }
+}
