@@ -4,6 +4,7 @@
   "description": "Stratum MITM server",
   "main": "server.js",
   "scripts": {
+    "start": "node server.js",
     "test": "echo 'Not implemented';"
   },
   "repository": {
